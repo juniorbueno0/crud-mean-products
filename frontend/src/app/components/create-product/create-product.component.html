@@ -1,0 +1,32 @@
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-lg-6 offset-lg-3">
+      <div class="card">
+        <div class="card-body text-center">
+          <div class="row">
+
+            <div class="col mt-2">
+              <span class="text-2xl font-semibold">Create Product</span>
+              <form [formGroup]="formInput" (submit)="addProduct()">
+                  <div class="mb-3 mt-4">
+                      <input formControlName="name" class="form-control" id="exampleInputEmail1" placeholder="Product Name">
+                  </div>                 
+                  <div class="mb-3 mt-4">
+                      <input formControlName="category" class="form-control" id="exampleInputEmail1" placeholder="Product Category">
+                  </div>
+                  <div class="mb-3 mt-4">
+                      <input formControlName="price" type="number" class="form-control" id="exampleInputEmail1" placeholder="Product Price">
+                  </div>
+                  <div class="justify-start ">
+                      <button routerLink="/" class="bg-red-500 rounded-lg p-1 mr-4">Close</button>
+                      <button type="submit" class="bg-green-500 rounded-lg p-1 ml-4">Create</button>
+                    </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
